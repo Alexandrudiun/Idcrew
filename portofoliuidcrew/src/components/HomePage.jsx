@@ -28,7 +28,6 @@ function HomePage() {
 
     return (
         <>
-            <p>Sal</p>
             <div className='ContainerFlex'>
             <img ref={imgRef} src={modellaptop} alt="Model Laptop" className="modellaptop" />
             </div>
