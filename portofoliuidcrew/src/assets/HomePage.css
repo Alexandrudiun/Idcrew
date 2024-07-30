@@ -1,0 +1,10 @@
+.modellaptop {
+    transition: transform 0.1s;
+    transform-style: preserve-3d;
+    width: 15%; /* Poți ajusta dimensiunea în funcție de necesități */
+}
+
+.modellaptop {
+   width: 10px;
+    height: 10px;
+}
