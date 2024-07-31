@@ -1,0 +1,25 @@
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.slider-section, .checkbox-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.checkbox-section {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-section label {
+    margin-left: 10px;
+}
