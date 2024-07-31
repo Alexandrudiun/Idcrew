@@ -1,11 +1,10 @@
 .services{
 
-    background: linear-gradient(to right, #000399, #00005e);
+    
     display: flex;
-    margin: 10vh;
-    padding: 5vh;
+   
     border-radius: 27px;
-    box-shadow: 0 0 20px 0 rgba(174, 255, 0, 0.2);
+    
     flex-direction: row;
     justify-content: space-between;
 }
@@ -27,4 +26,14 @@ button{
     border-radius: 27px;
     border-color: #ffffff;
   
+}
+
+.servicesexpanded{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #000399, #00005e);
+    margin: 10vh;
+    padding: 5vh;
+    border-radius: 27px;
+    box-shadow: 0 0 20px 0 rgba(174, 255, 0, 0.2);
 }
