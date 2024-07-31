@@ -7,10 +7,9 @@ import TaxiManagement from "./TaxiManagement";
 function Services() {
     const [isExpanded, setIsExpanded] = useState(false);
 
-        <div className="services" id="services">
-        
-            <h1>Our Services</h1>
-            <button className="btn">View All</button>
+    const handleButtonClick = () => {
+        setIsExpanded(!isExpanded);
+    };
 
     return (
         <div className={`servicesexpanded ${isExpanded ? "expanded" : ""}`}>
