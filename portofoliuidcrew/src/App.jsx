@@ -14,6 +14,7 @@ function App() {
       <Hero />
       {/* <HomePage/> */}
       <Services/>
+      <br></br>
       {/* Preload */}
       <PreLoader />
     </div>

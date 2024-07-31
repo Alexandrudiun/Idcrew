@@ -11,7 +11,8 @@ function Services() {
         setIsExpanded(!isExpanded);
     };
 
-    return (
+    return (<>
+    <div className="servicesCOMP">
         <div className={`servicesexpanded ${isExpanded ? "expanded" : ""}`}>
             <div className="services">
                 <h1>Our Services</h1>
@@ -27,6 +28,8 @@ function Services() {
                 </>
             )}
         </div>
+    </div>
+        </>
     );
 }
 
