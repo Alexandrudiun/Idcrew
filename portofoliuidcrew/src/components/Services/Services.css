@@ -1,0 +1,30 @@
+.services{
+
+    background: linear-gradient(to right, #000399, #00005e);
+    display: flex;
+    margin: 10vh;
+    padding: 5vh;
+    border-radius: 27px;
+    box-shadow: 0 0 20px 0 rgba(174, 255, 0, 0.2);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #000399;
+    color: white;
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 27px;
+    border-color: #ffffff;
+  
+}
