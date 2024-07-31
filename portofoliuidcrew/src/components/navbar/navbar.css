@@ -1,5 +1,3 @@
-/* Existing CSS code */
-
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -12,7 +10,8 @@
 }
 
 nav {
-  margin: 30px 20px;
+  width: 100%;
+  margin: 0; /* Removed the auto margin */
   animation: slideDown 5s ease-in-out forwards;
 }
 
@@ -24,6 +23,8 @@ nav {
   background: #03346E;
   border-radius: 1000px;
   height: 70px;
+  max-width: calc(100% - 60px); /* Ensures padding is considered for centering */
+  margin: 30px auto; /* Center the container inside the nav */
 }
 
 .logo {
