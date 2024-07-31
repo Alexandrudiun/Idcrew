@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import modellaptop from '../assets/modellaptop.svg';
-import '../assets/modellaptop.svg'; // Asigură-te că ai un fișier CSS pentru stiluri
+import '../assets/HomePage.css'; // Asigură-te că ai un fișier CSS pentru stiluri
 
 function HomePage() {
     const imgRef = useRef(null);
@@ -28,9 +28,14 @@ function HomePage() {
 
     return (
         <>
-            <div className='ContainerFlex'>
-            <img ref={imgRef} src={modellaptop} alt="Model Laptop" className="modellaptop" />
+        <div className='cont1'>
+        <div className='cont'>
+            <h1>UI Design Crew</h1>
+            <div className='container-flex'>
+                <img ref={imgRef} src={modellaptop} alt="Model Laptop" className="modellaptop" />
             </div>
+        </div>
+        </div>
         </>
     );
 }
