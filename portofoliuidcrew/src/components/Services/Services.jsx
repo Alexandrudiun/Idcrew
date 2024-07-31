@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './Services.css';
 import Slider from './Slider';
+import Restaurant from "./Restaurant";
+import TaxiManagement from "./TaxiManagement";
 
 function Services() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -17,7 +19,13 @@ function Services() {
                     {isExpanded ? "Collapse" : "View All"}
                 </button>
             </div>
-            {isExpanded && <Slider />}
+            {isExpanded && (
+                <>
+                    <Slider />
+                    <Restaurant />
+                    <TaxiManagement />
+                </>
+            )}
         </div>
     );
 }
