@@ -1,0 +1,85 @@
+/* Define the styles used within the Hero component */
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  top: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem; 
+}
+
+.hero-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem; /* Equivalent to mt-5 */
+}
+
+.hero-icon .circle {
+  width: 1.25rem; /* Equivalent to w-5 */
+  height: 1.25rem; /* Equivalent to h-5 */
+  border-radius: 50%;
+  background-color: #E2E2B6;
+}
+
+.hero-icon .line {
+  width: 0.25rem; /* Equivalent to w-1 */
+  height: 20rem; /* Equivalent to sm:h-80 */
+  background: linear-gradient(90deg, #E2E2B6, #ffa417); /* Equivalent to violet-gradient */
+}
+
+.hero-text {
+  color: white;
+  font-size: 3rem; 
+}
+
+.hero-subtext {
+  margin-top: 0.5rem; /* Equivalent to mt-2 */
+  color: #ffffffb3; /* Equivalent to text-white-100 */
+  font-size: 1.25rem; /* Equivalent to styles.heroSubText */
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 20px; /* Equivalent to bottom-32 */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-scroll-xs {
+  bottom: 2.5rem; /* Equivalent to xs:bottom-10 */
+}
+
+.scroll-container {
+  width: 2.1875rem; /* Equivalent to w-[35px] */
+  height: 4rem; /* Equivalent to h-[64px] */
+  border-radius: 1.5rem; /* Equivalent to rounded-3xl */
+  border: 0.25rem solid #ffa417; /* Equivalent to border-4 border-secondary */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem; /* Equivalent to p-2 */
+}
+
+.scroll-ball {
+  width: 0.75rem; /* Equivalent to w-3 */
+  height: 0.75rem; /* Equivalent to h-3 */
+  border-radius: 50%;
+  background-color: #E2E2B6; /* Equivalent to bg-secondary */
+  margin-bottom: 0.25rem; /* Equivalent to mb-1 */
+}
