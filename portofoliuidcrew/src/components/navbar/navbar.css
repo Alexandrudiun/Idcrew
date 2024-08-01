@@ -20,8 +20,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background: #03346E;
+  /* background: #03346E; */
   border-radius: 1000px;
+  /* border: 1px solid #fff; */
   height: 70px;
   max-width: calc(100% - 60px); /* Ensures padding is considered for centering */
   margin: 30px auto; /* Center the container inside the nav */

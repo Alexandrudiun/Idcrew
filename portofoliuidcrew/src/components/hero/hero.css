@@ -65,21 +65,23 @@
   bottom: 2.5rem; /* Equivalent to xs:bottom-10 */
 }
 
-.scroll-container {
-  width: 2.1875rem; /* Equivalent to w-[35px] */
-  height: 4rem; /* Equivalent to h-[64px] */
-  border-radius: 1.5rem; /* Equivalent to rounded-3xl */
-  border: 0.25rem solid #ffa417; /* Equivalent to border-4 border-secondary */
+/* .scroll-container {
+  width: 2.1875rem; 
+  height: 4rem; 
+  border-radius: 1.5rem; 
+  border: 0.25rem solid #ffa417; 
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0.5rem; /* Equivalent to p-2 */
+  padding: 0.5rem; 
+  display: none;
 }
 
 .scroll-ball {
-  width: 0.75rem; /* Equivalent to w-3 */
-  height: 0.75rem; /* Equivalent to h-3 */
+  display: none;
+  width: 0.75rem;
+  height: 0.75rem; 
   border-radius: 50%;
-  background-color: #E2E2B6; /* Equivalent to bg-secondary */
-  margin-bottom: 0.25rem; /* Equivalent to mb-1 */
-}
+  background-color: #E2E2B6; 
+  margin-bottom: 0.25rem; 
+} */
