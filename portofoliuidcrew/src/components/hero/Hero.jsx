@@ -18,7 +18,7 @@ const Hero = () => {
             Hi, we are <span className="text-[#915EFF]">I&D Crew</span>
           </h1>
           <p className="hero-subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Recusandae, necessitatibus quae quos dolores natus <br /> repellendus sed cupiditate fuga commodi corrupti nobis excepturi, harum sunt voluptatum tempore <br /> eius ipsa neque error corporis qui quaerat nam magni ex omnis! Pariatur, dolore sit.
+          Full-stack developers, we create web pages/web apps with a focus on <br /> both UI/UX design and back-end functionality. <br /> We enjoy collaborating on <br /> comprehensive projects, going to hackathons and <br /> we have a true passion for video filmmaking/editing.
           </p>
         </div>
       </div>

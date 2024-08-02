@@ -17,19 +17,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark; 
+  color-scheme: dark;
 }
 
-body{
+body {
   background-color: #021526;
+  overflow: hidden;
 }
-
-/* Horizontal scroll */
 
 .app {
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .main {
@@ -41,7 +40,17 @@ body{
 
 .bg {
   background: url('../.././/portofoliuidcrew/src/assets/3415537.jpg') no-repeat center center fixed;
-  background-size: cover; /* This makes sure the background covers the full width while maintaining its aspect ratio */
+  background-size: cover;
+}
+
+.bg1 {
+  background: url('../.././/portofoliuidcrew/src/assets/3415537 (1).jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bg2 {
+  background: url('../.././/portofoliuidcrew/src/assets/3415537 (2).jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Pune prop la bg pe telefon fara center !!!*/
