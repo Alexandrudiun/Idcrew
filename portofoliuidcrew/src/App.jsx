@@ -13,19 +13,16 @@ function App() {
 
   return (
     <div className="app">
-      <HorizontalScroll
-        config={{ stiffness: 160, damping: 24 }}
-        style={{ height: '100vh', width: '100%' }}
-      >
+      <HorizontalScroll style={{ scrollSnapType: 'x mandatory', overflowX: 'scroll', overflowY: 'hidden' }}>
         <div style={childStyle} className="main bg">
           <Navbar />
           <Hero />
         </div>
-        <div style={childStyle} className="main bg1">
-          <About /> 
+        <div style={childStyle} className="main bg1" id="about">
+          <About />
         </div>
         <div style={childStyle} className="main bg2">
-          <Services /> 
+          <Services />
         </div>
         <Artifica />
       </HorizontalScroll>
