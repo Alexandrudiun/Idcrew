@@ -1,4 +1,3 @@
-
 import React from 'react'
 import '../../components/about/about.css'
 import profile from '../../assets/profile.jpg'
@@ -6,7 +5,7 @@ import profile from '../../assets/profile.jpg'
 const About = () => {
   return (
     <div className="about-container">
-      <a href="#" class="btn-shine">About Us</a>
+      <a class="btn-shine">About Us</a>
       <div className="about-wrapper">
 
         <div className="alex">
