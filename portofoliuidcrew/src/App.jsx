@@ -15,13 +15,13 @@ function App() {
 
   return (
     <div className="app">
-      {/* <div className="bg-video">
+      <div className="bg-video">
         <video autoPlay muted loop id="myVideo">
           <source src={promo} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
         <div className="video-overlay"></div>
-      </div> */}
+      </div>
       <HorizontalScroll style={{ scrollSnapType: 'x mandatory', overflowX: 'scroll', overflowY: 'hidden' }}>
         <div style={childStyle} className="main bg">
           <Navbar />
