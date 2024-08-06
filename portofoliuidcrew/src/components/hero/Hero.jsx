@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../../style";
 import '../../components/hero/hero.css';
 import ComputersCanvas from "../canvas/Computers";
+import Tehnologies from "../Tehnologies/Tehnologies";
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
           <p className="hero-subtext">
             Full-stack developers, we create web pages/web apps with a focus on <br /> both UI/UX design and back-end functionality. <br /> We enjoy collaborating on <br /> comprehensive projects, going to hackathons and <br /> we have a true passion for video filmmaking/editing.
           </p>
+          <Tehnologies />
         </div>
       </div>
 

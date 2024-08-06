@@ -16,8 +16,8 @@ const Navbar = () => {
         <div className="nav-wrapper">
             <ul className="nav-items">
               <a href="#about"><li className="nav-item">About Us</li></a>
-              <a href="#background"><li className="nav-item">Our Background</li></a>
-              <a href="#skills"><li className="nav-item">Our Skills</li></a>
+              {/* <a href="#background"><li className="nav-item">Our Background</li></a> // ce ai vrut sa faci aici? */}
+              <a href="#contact"><li className="nav-item">Contact</li></a>
               <a href="#portofolio"><li className="nav-item">Portofolio</li></a>
               <a href="#services"><li className="nav-item">Services</li></a>
             </ul>

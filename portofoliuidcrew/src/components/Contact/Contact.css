@@ -1,15 +1,20 @@
-.servicesCOMP {
+.contact-servicesCOMP {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.services {
+.contact-services {
     display: flex;
     border-radius: 27px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -35,35 +40,57 @@ button:hover {
     background-color: #0005c9;
 }
 
-.servicesexpanded {
+.contact-services-expanded {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right, #000399, #00005e);
     margin: 10vh;
     padding: 5vh;
     border-radius: 27px;
     box-shadow: 0 0 20px 0 rgba(174, 255, 0, 0.2);
-    max-height: 18vh;
+    max-height: 59vh; /* Adjusted initial height */
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
-.servicesexpanded.expanded {
-    max-height: 138vh; /* Ajustează această valoare după necesitate */
-    padding: 5vh; /* Asigură-te că padding-ul este reintrodus când este expandat */
-    
-}
-    
-
-.services h1 {
-    font-size: 3em; /* Poți ajusta această valoare după preferințe */
+.contact-services-expanded.expanded {
+    max-height: 135vh;
+    padding: 5vh;
 }
 
-.content {
+.contact-services h1 {
+    font-size: 3em;
+}
+
+.contact-content {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
-.servicesexpanded.expanded .content {
+.contact-services-expanded.expanded .contact-content {
     opacity: 1;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    resize: vertical;
 }
