@@ -1,11 +1,11 @@
-.services{
+.services {
     display: flex;
     border-radius: 27px;
     flex-direction: row;
     justify-content: space-between;
 }
 
-button{
+button {
     background-color: #000399;
     color: white;
     border: none;
@@ -21,10 +21,9 @@ button{
     cursor: pointer;
     border-radius: 27px;
     border-color: #ffffff;
-  
 }
 
-.servicesexpanded{
+.servicesexpanded {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right, #000399, #00005e);
@@ -32,9 +31,15 @@ button{
     padding: 5vh;
     border-radius: 27px;
     box-shadow: 0 0 20px 0 rgba(174, 255, 0, 0.2);
+    max-height: 400px; /* Ajustează această valoare după cum este necesar */
+    overflow-y: auto;
+    transition: max-height 0.3s ease; /* Adaugă o tranziție lină */
+}
+
+.servicesexpanded.expanded {
+    max-height: 600px; /* Ajustează această valoare după cum este necesar */
 }
 
 .services h1 {
     font-size: 3em; /* Poți ajusta această valoare după preferințe */
 }
-

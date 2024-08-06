@@ -1,25 +1,96 @@
+
+
+/* Slider Container */
 .slider-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fade-in 1s ease-out;
+    max-width: 600px;
+    margin: 50px auto;
 }
 
-.slider-section, .checkbox-section {
+/* Slider Section */
+.slider-section {
+    padding-top: 20vh;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.slider {
+    gap: 15px;
     width: 100%;
 }
 
-.checkbox-section {
-    display: flex;
-    align-items: center;
+.slider-section h3 {
+    font-size: 1.5em;
+    color: #333;
+ 
 }
 
-.checkbox-section label {
-    margin-left: 10px;
+.slider-section label {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    outline: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Price Display */
+.price-display {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.informatii{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: #000;
 }

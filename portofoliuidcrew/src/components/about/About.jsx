@@ -25,7 +25,7 @@ const About = () => {
                 <div className="timeline-content">
                   <h3>Politehnica University of Bucharest</h3>
                   <p>Faculty of Automatic Control and Computer Science
-                    <br /> <br /> Automatic control and systems engineering
+                    <br /> <br /> Automatic control and applied informatics
                   </p>
                 </div>
               </div>
