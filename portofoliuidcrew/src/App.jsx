@@ -4,14 +4,13 @@ import './style.css';
 import Navbar from './components/navbar/Navbar';
 import Services from './components/Services/Services';
 import Hero from './components/hero/Hero';
-import HorizontalScroll from 'react-scroll-horizontal';
 import Artifica from './components/Particles/Artifica';
 import About from './components/about/About';
 import promo from '../../../idcrew/portofoliuidcrew/src/assets/promo.mp4';
 import Tehnologies from './components/Tehnologies/Tehnologies';
 
 function App() {
-  const childStyle = { width: '100vw', height: '100vh' };
+  const sectionStyle = { width: '100vw', minHeight: '100vh' };
 
   return (
     <div className="app">
@@ -22,20 +21,18 @@ function App() {
         </video>
         <div className="video-overlay"></div>
       </div>
-      <HorizontalScroll style={{ scrollSnapType: 'x mandatory', overflowX: 'scroll', overflowY: 'hidden' }}>
-        <div style={childStyle} className="main bg">
-          <Navbar />
-          <Hero />
-        </div>
-        <div style={childStyle} className="main bg1" id="about">
-          <About />
-        </div>
-        <div style={childStyle} className="main bg2">
-          <Services />
-          <Tehnologies />
-        </div>
-        <Artifica />
-      </HorizontalScroll>
+      <div style={sectionStyle} className="main bg">
+        <Navbar />
+        <Hero />
+      </div>
+      <div style={sectionStyle} className="main bg1" id="about">
+        <About />
+      </div>
+      <div style={sectionStyle} className="main bg2">
+        <Services />
+        <Tehnologies />
+      </div>
+      <Artifica />
       <PreLoader />
     </div>
   );

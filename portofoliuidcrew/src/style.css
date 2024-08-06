@@ -16,22 +16,17 @@
 
 body {
   background-color: #021526;
-  overflow: hidden; /* Prevent scrolling on the body */
+  /* Remove overflow hidden */
 }
 
-/* Horizontal scroll */
-
 .app {
-  overflow: hidden; /* Prevent scrolling on the app container */
+  /* Remove overflow hidden */
   width: 100vw;
-  height: 100vh;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh; /* Change height to min-height */
 }
 
 .bg-video {
