@@ -8,6 +8,7 @@ import HorizontalScroll from 'react-scroll-horizontal';
 import Artifica from './components/Particles/Artifica';
 import About from './components/about/About';
 import promo from '../../../idcrew/portofoliuidcrew/src/assets/promo.mp4';
+import Tehnologies from './components/Tehnologies/Tehnologies';
 
 function App() {
   const childStyle = { width: '100vw', height: '100vh' };
@@ -31,6 +32,7 @@ function App() {
         </div>
         <div style={childStyle} className="main bg2">
           <Services />
+          <Tehnologies />
         </div>
         <Artifica />
       </HorizontalScroll>
