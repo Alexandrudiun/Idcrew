@@ -6,7 +6,7 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    padding: 7%;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@
 
 /* Slider Section */
 .slider-section {
-    padding-top: 20vh;
+   
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -85,12 +85,4 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.informatii{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    color: #000;
 }

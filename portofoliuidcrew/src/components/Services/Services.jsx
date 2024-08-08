@@ -83,7 +83,15 @@ function Services() {
                                     <li><FontAwesomeIcon icon={faCheckCircle} /> Web application development</li>
                                     <li><FontAwesomeIcon icon={faCheckCircle} /> Testing</li>
                                     <li><FontAwesomeIcon icon={faCheckCircle} /> Maintenance</li>
+                                    <li><FontAwesomeIcon icon={faCheckCircle} /> Design personalizat</li>
+                                    <li><FontAwesomeIcon icon={faCheckCircle} /> Site-ul va fi optimizat pentru motoarele de cautare (SEO)</li>
+                                    <li><FontAwesomeIcon icon={faCheckCircle} /> Site-ul va fi securizat</li>
+                                    <li><FontAwesomeIcon icon={faCheckCircle} /> Site-ul va fi creat in 7-14 zile lucratoare</li>
+                                    <li><FontAwesomeIcon icon={faCheckCircle} /> Site-ul va fi scris de la 0.</li>
+                                    <li><FontAwesomeIcon icon={faCheckCircle} /> Site-ul va fi optimizat pentru toate dispozitivele</li>
                                 </ul>
+                                <Slider />
+                               
                             </div>
                         </div>
                     </li>

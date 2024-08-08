@@ -43,19 +43,6 @@ function Slider() {
                 </div>
             </div>
         </div>
-
-        <div className="informatii">
-        <ul>
-            <li>Design personalizat</li>
-            <br/> <li>Site-ul va fi optimizat pentru toate dispozitivele</li>
-            <br/> <li>Site-ul va fi optimizat pentru motoarele de cautare (SEO)</li>
-            <br/> <li>Site-ul va fi securizat</li>
-            <br/> <li>Site-ul va fi creat in 7-14 zile lucratoare</li>
-            <br/> <li>Site-ul va fi scris de la 0.</li>
-        </ul>
-        </div>
-
-
     </div>
     );
 }
