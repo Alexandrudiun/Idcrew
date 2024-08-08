@@ -10,7 +10,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Logic to send the data
-        console.log('Name:', name);
+        console.log('Name:', name);``
         console.log('Email:', email);
         console.log('Message:', message);
     };

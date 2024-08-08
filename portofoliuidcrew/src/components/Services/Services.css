@@ -1,8 +1,10 @@
-.servicesCOMP {
+
+/* .servicesCOMP {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    gap: 100px;
+    height: 70vh;
 }
 
 .services {
@@ -49,14 +51,14 @@ button:hover {
 }
 
 .servicesexpanded.expanded {
-    max-height: 138vh; /* Ajustează această valoare după necesitate */
-    padding: 5vh; /* Asigură-te că padding-ul este reintrodus când este expandat */
+    max-height: 138vh; 
+    padding: 5vh; 
     
 }
     
 
 .services h1 {
-    font-size: 3em; /* Poți ajusta această valoare după preferințe */
+    font-size: 3em;
 }
 
 .content {
@@ -66,4 +68,195 @@ button:hover {
 
 .servicesexpanded.expanded .content {
     opacity: 1;
+} */
+
+
+/* new css */
+
+.services-container {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.btn-shine {
+    text-align: center;
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(
+    to right,
+    #ccc,
+    #6a59d1
+  );
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+}
+
+@-moz-keyframes shine {
+    0% { background-position: 0; }
+    60% { background-position: 180px; }
+    100% { background-position: 180px; }
+}
+
+@-webkit-keyframes shine {
+    0% { background-position: 0; }
+    60% { background-position: 180px; }
+    100% { background-position: 180px; }
+}
+
+@-o-keyframes shine {
+    0% { background-position: 0; }
+    60% { background-position: 180px; }
+    100% { background-position: 180px; }
+}
+
+@keyframes shine {
+    0% { background-position: 0; }
+    60% { background-position: 250px; }
+    100% { background-position: 300px; }
+}
+
+.services .container .content {
+    width: 100%;
+}
+
+.services-description h3 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.service-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #000;
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    border-bottom: 3px solid #6a59d1;
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    text-align: center; /* Center the content inside the card */
+}
+
+.service-card > .service-icon {
+    color: #6a59d1;
+    font-size: 5em; /* Increase the icon size */
+    margin-bottom: 30px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.service-card .learn-more-btn {
+    color: #777;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.service-card .learn-more-btn i {
+    transition: .3s ease;
+}
+
+.service-card:hover .learn-more-btn i {
+    transform: translateX(10px);
+}
+
+.service-modal {
+    z-index: 999999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.service-modal.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.service-modal-body {
+    position: relative;
+    background: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    transform: translateY(-50px);
+    transition: .5s ease;
+}
+
+.service-modal.active .service-modal-body {
+    transform: translateY(0);
+}
+
+.modal-close-btn {
+    background-color: #6a59d1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+    background-color: #4e3ba0;
+}
+
+.service-modal-body h3 {
+    font-size: 2em;
+}
+
+.service-modal-body h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 15px 0 10px;
+}
+
+.service-modal-body ul li {
+    margin-top: 15px;
+}
+
+.service-modal-body ul li i {
+    color: #6a59d1;
+}
+
+
+
+
+  

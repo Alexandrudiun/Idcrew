@@ -72,7 +72,7 @@ li.nav-item::after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ffa417;
+  background-color: #bf77f6;
   transition: width 0.3s ease;
 }
 
@@ -81,5 +81,5 @@ li.nav-item:hover::after {
 }
 
 li.nav-item:hover {
-  color: #ffa417;
+  color: #bf77f6;
 }

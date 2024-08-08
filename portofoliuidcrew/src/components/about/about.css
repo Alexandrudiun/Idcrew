@@ -12,8 +12,8 @@
   color: #fff;
   background: linear-gradient(
     to right,
-    #6EACDA,
-    #ffa417
+    #ccc,
+    #bf77f6
   );
   background-position: 0;
   -webkit-background-clip: text;
@@ -28,6 +28,7 @@
   white-space: nowrap;
   font-family: "Poppins", sans-serif;
 }
+
 @-moz-keyframes shine {
   0% {
     background-position: 0;
@@ -111,7 +112,7 @@ img{
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(191, 119, 246, 0.2);
 }
 
 .card__content {
@@ -203,7 +204,7 @@ img{
 .timeline-dot {
   height: 15px;
   width: 15px;
-  background-color: #fff;
+  background-color: #bf77f6;
   box-shadow: 0 0 15px var(--main-color), 0 30px var(--main-color);
   position: absolute;
   left: calc(50% - 7.5px);
@@ -230,7 +231,7 @@ img{
 
 .timeline-content:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px #bf77f6;
 }
 
 .timeline-content h3 {
