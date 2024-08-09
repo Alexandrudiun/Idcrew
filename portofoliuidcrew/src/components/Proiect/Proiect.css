@@ -11,3 +11,8 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
+.imagini{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}

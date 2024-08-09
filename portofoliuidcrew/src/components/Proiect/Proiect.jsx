@@ -7,7 +7,7 @@ function Proiect({Title, Description, Image , Link}) {
             <div className="card">
 
                 
-                <img src={Image} style={{maxWidth:'50%'}} alt="Avatar" />
+                <img src={Image} className="imagini" alt="Avatar" />
                 <div className="container">
                     <h4><b>{Title}</b></h4>
                     <p>{Description}</p>

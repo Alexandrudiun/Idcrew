@@ -9,6 +9,7 @@ import About from './components/about/About';
 import promoImage from '../../../idcrew/portofoliuidcrew/src/assets/3672298.jpg';
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const sectionStyle = { width: '100vw', minHeight: '100vh' };
@@ -35,6 +36,7 @@ function App() {
       <div style={sectionStyle} className="main bg3" id="portofolio">
         <Projects />
       </div>
+      <Footer/>
       <Artifica />
       <PreLoader />
     </div>

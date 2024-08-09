@@ -1,76 +1,27 @@
-.contact-servicesCOMP {
+.contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
+    border-radius: 27px;
 }
 
-.contact-services {
+.contact-form {
     display: flex;
-    border-radius: 27px;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     max-width: 600px;
     padding: 20px;
     background-color: white;
+    border-radius: 27px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    background-color: #000399;
-    color: white;
-    border: none;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 27px;
-    border-color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0005c9;
-}
-
-.contact-services-expanded {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #000399, #00005e);
-    margin: 10vh;
-    padding: 5vh;
-    border-radius: 27px;
-    box-shadow: 0 0 20px 0 rgba(174, 255, 0, 0.2);
-    max-height: 59vh; /* Adjusted initial height */
-    overflow: hidden;
-    transition: max-height 0.5s ease, padding 0.5s ease;
-}
-
-.contact-services-expanded.expanded {
-    max-height: 135vh;
-    padding: 5vh;
-}
-
-.contact-services h1 {
+.contact-form h1 {
     font-size: 3em;
-}
-
-.contact-content {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.contact-services-expanded.expanded .contact-content {
-    opacity: 1;
+    margin-bottom: 20px;
 }
 
 form div {
@@ -93,4 +44,20 @@ form textarea {
 
 form textarea {
     resize: vertical;
+}
+
+button {
+    background-color: #000399;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 27px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0005c9;
 }
