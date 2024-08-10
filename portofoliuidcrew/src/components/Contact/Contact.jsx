@@ -15,21 +15,16 @@ const Contact = () => {
         console.log('Message:', message);
     };
 
-    const toggleExpanded = () => {
-        setIsExpanded(!isExpanded);
-    };
-
+  
     return (
-        <div>
+        <div style={{display:'flex', width:'75%', height:'75%', justifyContent:'center', alignItems:'center'}}>
             
             <div className={`contact-services-expanded ${isExpanded ? 'expanded' : ''}`}>
-            <button onClick={toggleExpanded}>
-               Contact 
-            </button>
+          
                 <div className="contact-content">
                     
                     <form onSubmit={handleSubmit} className="contact-services">
-                    <h1 style={{color:'black'}}>Contact Us</h1>
+                    <h1 style={{color:'white'}}>Contact Us</h1>
                         <div>
                             <label htmlFor="name">Name:</label>
                             <input
