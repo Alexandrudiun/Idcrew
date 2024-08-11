@@ -34,8 +34,8 @@ function App() {
         <Projects />
       </div>
       <Footer />
-      {/* <Artifica />
-      <PreLoader /> */}
+      <Artifica />
+      <PreLoader />
     </div>
   );
 }
