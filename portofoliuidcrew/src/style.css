@@ -21,7 +21,6 @@ body {
 
 .app {
   width: 100vw;
-  overflow-x: hidden; /* Asigură-te că nu poți da scroll orizontal */
 }
 
 .bg-image {
@@ -40,10 +39,12 @@ body {
 
 .main {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh; /* Ensure full viewport coverage */
   position: relative;
   z-index: 1;
+  margin-top: 0; /* Explicitly set margin-top to 0 */
 }
+
 
 .image-overlay {
   position: fixed;

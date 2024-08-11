@@ -12,8 +12,8 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const sectionStyle = { width: '100vw', minHeight: '100vh' };
-
+  const sectionStyle = { width: '100vw', height: '100vh' };
+  
   return (
     <div className="app">
       <div className="bg-image"></div>
@@ -33,7 +33,7 @@ function App() {
       <div style={sectionStyle} className="main bg3" id="portofolio">
         <Projects />
       </div>
-      <Footer />
+      {/* <Footer /> */}
       <Artifica />
       <PreLoader />
     </div>
