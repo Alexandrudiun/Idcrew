@@ -5,8 +5,6 @@ function Proiect({Title, Description, Image , Link}) {
     return (
         <>
             <div className="card">
-
-                
                 <img src={Image} className="imagini" alt="Avatar" />
                 <div className="container">
                     <h4><b>{Title}</b></h4>

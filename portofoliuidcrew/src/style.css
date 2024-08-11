@@ -16,15 +16,12 @@
 
 body {
   background-color: #021526;
+  overflow-x: hidden; /* Previne scroll-ul orizontal */
 }
 
 .app {
   width: 100vw;
-}
-
-.main {
-  width: 100vw;
-  min-height: 100vh;
+  overflow-x: hidden; /* Asigură-te că nu poți da scroll orizontal */
 }
 
 .bg-image {
@@ -33,20 +30,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  background-image: url('../../../idcrew/portofoliuidcrew/src/assets/3672298.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
+  /* filter: brightness(0.9); */
 }
 
-#promoImage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  transform: translate(-50%, -50%);
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .image-overlay {
@@ -55,7 +51,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity here */
+  background-color: rgba(0, 0, 0, 1); /* Ajustează opacitatea aici */
   z-index: 0;
 }
 
@@ -69,4 +65,32 @@ body {
   text-indent: -9999em;
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em #fff, 1.8em -1.8em 0 0em #fff, 2.5em 0em 0 0em #fff, 1.75em 1.75em 0 0em #fff, 0em 2.5em 0 0em #fff, -1.8em 1.8em 0 0em #fff, -2.6em 0em 0 0em #fff, -1.8em -1.8em 0 0em #fff;
+  }
 }

@@ -16,10 +16,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="bg-image">
-        <img src={promoImage} alt="Promotional" id="promoImage" />
-        <div className="image-overlay"></div>
-      </div>
+      <div className="bg-image"></div>
       <div style={sectionStyle} className="main bg">
         <Navbar />
         <Hero />
@@ -36,9 +33,9 @@ function App() {
       <div style={sectionStyle} className="main bg3" id="portofolio">
         <Projects />
       </div>
-      <Footer/>
-      <Artifica />
-      <PreLoader />
+      <Footer />
+      {/* <Artifica />
+      <PreLoader /> */}
     </div>
   );
 }
