@@ -11,6 +11,12 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.preloader.hide {
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 .img-container {
