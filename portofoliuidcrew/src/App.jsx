@@ -12,19 +12,24 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const sectionStyle = { width: '100vw', height: '100vh' };
-  
+  const sectionStyle = { width: '100%', minHeight: '100vh' };
+
   return (
     <div className="app">
-      <div className="bg-image"></div>
-      <div style={sectionStyle} className="main bg">
+      {/* Remove or comment out this section */}
+      {/* <div className="bg-image">
+        <img src={promoImage} alt="Promotional" id="promoImage" />
+        <div className="image-overlay"></div>
+      </div> */}
+      
+      <div className="bg">
         <Navbar />
         <Hero />
       </div>
-      <div style={sectionStyle} className="main bg1" id="about">
+      {/* <div className="bg" id="about">
         <About />
-      </div>
-      <div style={sectionStyle} className="main bg2" id="services">
+      </div> */}
+      {/* <div style={sectionStyle} className="main bg2" id="services">
         <Services />
       </div>
       <div style={sectionStyle} className="main bg3" id="contact">
@@ -33,11 +38,12 @@ function App() {
       <div style={sectionStyle} className="main bg3" id="portofolio">
         <Projects />
       </div>
-      {/* <Footer /> */}
+      <Footer />
       <Artifica />
-      <PreLoader />
+      <PreLoader /> */}
     </div>
   );
 }
+
 
 export default App;

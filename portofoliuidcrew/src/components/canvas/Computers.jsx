@@ -2,8 +2,15 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-const Computers = ({ isMobile }) => {
+const Computers = ({ isMobile, isVerySmallScreen }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+
+  const scaleValue = isVerySmallScreen ? 0.5 : isMobile ? 0.4 : 0.75;
+  const positionValue = isVerySmallScreen
+    ? [0, -3, -3]
+    : isMobile
+    ? [0, -3, -2.2]
+    : [0, -3.25, -1.5];
 
   return (
     <mesh receiveShadow castShadow>
@@ -26,26 +33,46 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={scaleValue}
+        position={positionValue}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
 };
 
+
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isVerySmallScreen, setIsVerySmallScreen] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-    setIsMobile(mediaQuery.matches);
-    const handleMediaQueryChange = (event) => {
+    const mobileMediaQuery = window.matchMedia("(max-width: 800px)");
+    const verySmallScreenMediaQuery = window.matchMedia("(max-width: 400px)");
+
+    setIsMobile(mobileMediaQuery.matches);
+    setIsVerySmallScreen(verySmallScreenMediaQuery.matches);
+
+    const handleMobileMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    const handleVerySmallScreenMediaQueryChange = (event) => {
+      setIsVerySmallScreen(event.matches);
+    };
+
+    mobileMediaQuery.addEventListener("change", handleMobileMediaQueryChange);
+    verySmallScreenMediaQuery.addEventListener(
+      "change",
+      handleVerySmallScreenMediaQueryChange
+    );
+
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      mobileMediaQuery.removeEventListener("change", handleMobileMediaQueryChange);
+      verySmallScreenMediaQuery.removeEventListener(
+        "change",
+        handleVerySmallScreenMediaQueryChange
+      );
     };
   }, []);
 
@@ -68,11 +95,12 @@ const ComputersCanvas = () => {
             MIDDLE: 1, // middle mouse button
           }}
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={isMobile} isVerySmallScreen={isVerySmallScreen} />
       </Suspense>
       <Preload all />
     </Canvas>
   );
 };
+
 
 export default ComputersCanvas;

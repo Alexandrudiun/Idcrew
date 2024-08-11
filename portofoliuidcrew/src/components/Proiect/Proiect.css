@@ -1,6 +1,7 @@
+/* 
 .card {
-    margin: 1.5vw; /* Margină ușor redusă pentru a preveni prea mult spațiu pe ecrane mai mari */
-    padding: 1.5vw; /* Padding ușor redus pentru coerență */
+    margin: 1.5vw; 
+    padding: 1.5vw; 
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -9,112 +10,109 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: row; /* Layout implicit: imaginea și textul unul lângă altul */
-    align-items: center;
-    width: 25vw; /* Ajustare la un 25% din lățimea viewport-ului pentru ecrane mari */
-    height: auto; /* Înălțimea automată pentru a se ajusta la conținut */
-    min-width: 300px; /* Asigurarea unei lățimi minime pentru desktop */
-    max-width: 350px; /* Limitează lățimea pentru a preveni carduri prea mari */
+    flex-direction: row; 
+    align-items: center; 
+    width: 25vw; 
+    height: auto; 
+    min-width: 300px; 
+    max-width: 350px; 
 }
 
 .container {
-    text-align: left; /* Alinierea textului la stânga */
-    padding: 0 1.5vw; /* Padding ajustat pentru a păstra echilibrul */
-    flex: 1.5; /* Containerul de text ocupă mai mult spațiu disponibil */
-    word-wrap: break-word; /* Permite ruperea cuvintelor pentru a preveni tăierea textului */
-    min-height: 200px; /* Setează o înălțime minimă pentru containere pe ecrane mari */
-}
+    text-align: left; 
+    padding: 0 1.5vw; 
+    flex: 1.5;
+    word-wrap: break-word; 
+} 
+*/
 
-.card .container h4 {
-    font-size: 1.2vw; /* Dimensiune relativă a fontului pentru titluri */
-    margin: 0; /* Elimină marginile suplimentare */
+/* .card .container h4 {
+    font-size: 1.2vw;
+    margin: 0;
 }
 
 .card .container p {
-    font-size: 1vw; /* Dimensiune relativă a fontului pentru paragrafe */
-    margin: 0; /* Elimină marginile suplimentare */
+    font-size: 1vw;
+    margin: 0;
 }
 
 .imagini {
-    width: 35%; /* Imaginea ocupă 35% din lățimea cardului */
+    width: 35%;
     height: auto;
     border-radius: 10px;
-    margin-right: 1vw; /* Spațiere între imagine și text */
+    margin-right: 1vw;
 }
 
-/* Media Query pentru tablete (lățime între 768px și 1024px) */
 @media only screen and (max-width: 1024px) {
     .card {
-        flex-direction: row; /* Păstrează imaginea și textul unul lângă altul pe tablete */
-        width: 70%; /* Lățimea cardului pe tablete */
+        flex-direction: row;
+        width: 70%;
     }
 
     .imagini {
-        width: 40%; /* Imaginea ocupă 40% din lățimea cardului pe tablete */
+        width: 40%;
     }
 
     .container {
-        padding: 2vw; /* Ajustarea paddingului pentru un aspect mai bun pe tablete */
+        padding: 2vw;
     }
 
     .card .container h4 {
-        font-size: 2.5vw; /* Font puțin mai mare pentru titluri pe tablete */
+        font-size: 2.5vw;
     }
 
     .card .container p {
-        font-size: 2vw; /* Font puțin mai mare pentru paragrafe pe tablete */
+        font-size: 2vw;
     }
 }
 
-/* Media Query pentru telefoane mobile (lățime între 481px și 767px) */
 @media only screen and (max-width: 768px) {
     .card {
-        flex-direction: column; /* Afișează imaginea și textul pe verticală pe ecrane mai mici */
-        width: 80%; /* Ajustează lățimea cardului pe ecrane mai mici */
+        flex-direction: column;
+        width: 80%;
     }
 
     .imagini {
-        width: 80%; /* Imaginea ocupă 80% din lățimea cardului */
-        margin-bottom: 2vw; /* Spațiu suplimentar sub imagine */
+        width: 80%;
+        margin-bottom: 2vw;
     }
 
     .container {
-        text-align: center; /* Alinierea textului la centru */
-        padding: 5vw 0; /* Ajustarea paddingului pentru un aspect mai bun pe ecrane mai mici */
+        text-align: center;
+        padding: 5vw 0;
     }
 
     .card .container h4 {
-        font-size: 4vw; /* Font mai mare pentru ecrane mici */
+        font-size: 4vw;
     }
 
     .card .container p {
-        font-size: 3.5vw; /* Font mai mare pentru paragrafe pe ecrane mici */
+        font-size: 3.5vw;
     }
 }
 
-/* Media Query pentru telefoane foarte mici (lățime sub 480px) */
 @media only screen and (max-width: 480px) {
     .card {
-        flex-direction: column; /* Layout vertical pentru ecrane foarte mici */
-        width: 90%; /* Lățimea cardului pe ecrane foarte mici */
-        padding: 5vw; /* Padding suplimentar */
+        flex-direction: column;
+        width: 90%;
+        padding: 5vw;
     }
 
     .imagini {
-        width: 90%; /* Imaginea ocupă toată lățimea cardului */
-        margin-bottom: 5vw; /* Spațiu suplimentar sub imagine */
+        width: 90%;
+        margin-bottom: 5vw;
     }
 
     .container {
-        text-align: center; /* Alinierea textului la centru */
-        padding: 5vw 0; /* Ajustarea paddingului pentru un aspect mai bun pe ecrane foarte mici */
+        text-align: center;
+        padding: 5vw 0;
     }
 
     .card .container h4 {
-        font-size: 6vw; /* Font mai mare pentru ecrane foarte mici */
+        font-size: 6vw;
     }
 
     .card .container p {
-        font-size: 4.5vw; /* Font mai mare pentru paragrafe pe ecrane foarte mici */
+        font-size: 4.5vw;
     }
-}
+} */
