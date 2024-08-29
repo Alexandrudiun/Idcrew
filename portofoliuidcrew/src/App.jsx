@@ -26,10 +26,10 @@ function App() {
         <Navbar />
         <Hero />
       </div>
-      {/* <div className="bg" id="about">
+      <div className="bg" id="about">
         <About />
-      </div> */}
-      {/* <div style={sectionStyle} className="main bg2" id="services">
+      </div>
+      <div style={sectionStyle} className="main bg2" id="services">
         <Services />
       </div>
       <div style={sectionStyle} className="main bg3" id="contact">
@@ -40,7 +40,7 @@ function App() {
       </div>
       <Footer />
       <Artifica />
-      <PreLoader /> */}
+      <PreLoader />
     </div>
   );
 }
